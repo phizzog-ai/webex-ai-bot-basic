@@ -1,0 +1,83 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://avatars.slack-edge.com/2021-06-24/2233642559168_0ece5626019f23253940_512.png",
+                            "size": "Medium",
+                            "height": "50px"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Welcome!",
+                            "wrap": true,
+                            "size": "Large",
+                            "spacing": "Small"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Choice:",
+            "wrap": true
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "placeholder": "Ask me anything",
+            "spacing": "None",
+            "id": "card_custom_choice_selected",
+            "choices": [
+                {
+                    "title": "Ask me anything",
+                    "value": "#aimsg"
+                }
+            ],
+            "value": "#aimsg"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Prompt message:",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Enter your prompt message here...",
+            "isMultiline": true,
+            "spacing": "None",
+            "id": "card_custom_description_field"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "id": "submit",
+                    "data": {
+                        "submit": "ama"
+                    }
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}

@@ -1,0 +1,7 @@
+.env
+node_modules/
+venv/
+package-lock.json
+llm_log.txt
+log.txt
+.DS_Store
